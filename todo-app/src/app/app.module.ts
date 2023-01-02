@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FullCalendarModule } from '@fullcalendar/angular';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FullCalendarModule // register FullCalendar with your app
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
